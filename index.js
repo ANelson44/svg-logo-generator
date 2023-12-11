@@ -109,7 +109,7 @@ async function init() {
 	
 	//Print shape to log
 	console.log("Displaying shape:\n\n" + svgString);
-	//document.getElementById("svg_image").innerHTML = svgString;
+	// document.getElementById("svg_image").innerHTML = svgString;
 
 	console.log("Shape generation complete!");
 	console.log("Writing shape to file...");
