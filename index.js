@@ -8,7 +8,6 @@ class Svg {
         this.shapeElement = ''
     }
     render(){
-
         return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shapeElement}${this.textElement}</svg>`
     }
     setTextElement(text,color){
@@ -109,7 +108,6 @@ async function init() {
 	
 	//Print shape to log
 	console.log("Displaying shape:\n\n" + svgString);
-	// document.getElementById("svg_image").innerHTML = svgString;
 
 	console.log("Shape generation complete!");
 	console.log("Writing shape to file...");
