@@ -22,12 +22,12 @@ const questions = [
     {
         type: 'input',
         name: 'text',
-        message: 'Logo Text: Enter up to three (3) characters.',
+        message: 'TEXT: Enter up to three (3) characters.',
     },
     {
         type: 'input',
         name: 'text-color',
-        message: 'Logo Text Color: Enter a color keyword or hexadecimal number.',
+        message: 'TEXT COLOR: Enter a color keyword or hexadecimal number.',
     },
     {
         type: 'list',
@@ -48,7 +48,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('logo.svg has been generated!')
+        console.log('Generated logo.svg')
     });
 }
 
@@ -102,8 +102,8 @@ async function init() {
 
 	// Create a new Svg instance and add the shape and text elements to it
 	var svg = new Svg();
+    svg.setShapeElement(user_shape);
 	svg.setTextElement(user_text, user_font_color);
-	svg.setShapeElement(user_shape);
 	svgString = svg.render();
 	
 	//Print shape to log
